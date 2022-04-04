@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+<head>
+
+    <script>
+        function result(){
+            var one = parseInt(document.getElementById("one").value);
+            var two = parseInt(document.getElementById("two").value);
+            document.getElementById("demo").innerHTML = (one+two);
+        }
+    </script>
+</head>
 <body>
 
 <h2>My First Web Page</h2>
@@ -7,10 +17,10 @@
 
 <p id="demo"></p>
 
-<script>
-document.getElementById("demo").innerHTML = 1234567890 + 1234567890
-;
-</script>
+<input type="text" id="one" value="0"/>
+<input type="text" id="two" value="0"/>
+<button name="result" onclick="result()">Click here for the answer!</button>
+
 
 </body>
 </html> 
